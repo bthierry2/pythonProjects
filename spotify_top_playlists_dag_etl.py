@@ -1,3 +1,10 @@
+#The following codes extract top playlists from spotify daily, clean them, and loads in a mysql AWS RDS database
+#To extract the data from the spotify API you will need to create a spotify account if you don't have one, and use 'spotify for developers' to the
+#       clientID and secretID to be authorized to use the API
+#You interact with the spotify API via the spotipy module
+#And to load the data you will need an AWS account, and then create an RDS database (here I use mysql)
+# And for the process to run daily, you will need a scheduling tool (here I use airflow via the airflow library)
+
 import pandas as pd
 import numpy as np
 import json
